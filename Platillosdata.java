@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Clase para la configuración de los datos 
+ * de las platillos del restaurante de comida rápida.
  *
- * @author victo
+ * @author Victor Hugo Silva Blancas
  */
 public class Platillosdata {
     String cadena;

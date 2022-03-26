@@ -3,12 +3,13 @@ package com.hugosql.regresionlineal;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.sql.Timestamp;
 import java.util.Scanner;
 
 /**
+ * Recupera los datos de los archivos fuente en SQL 
+ * y los traduce a formato CSV.
  *
- * @author victo
+ * @author Victor Hugo Silva Blancas
  */
 public class Extraedatos {
     
@@ -108,43 +109,6 @@ public class Extraedatos {
             //System.out.println("Proceso Terminado "+i);
         } catch (Exception e) {
             System.out.println("Covides: "+e.getLocalizedMessage());
-        }
-    }
-    public void Covides2() {
-        try {
-            File fdestino=new File("casoscovid2021.csv");
-            FileWriter fw=new FileWriter(fdestino);
-            PrintWriter pw=new PrintWriter(fw);
-            String cabeza="cve_ent,poblacion,nombre,";
-            for (int i=0;i<Librerias.ANUALIDAD;i++) {
-                cabeza+=Librerias.getFechacorta(i)+Librerias.COMMA;
-            }
-            pw.println(cabeza);
-            
-            Covidesdata midato=new Covidesdata();
-            
-            File forigen=new File("casoscovidsalud.csv");
-            Scanner lector = new Scanner(forigen);
-            int i=0;
-            boolean primero=true;
-            while (lector.hasNextLine()) {
-                String cade = lector.nextLine();
-                if (primero) {
-                    primero=false;
-                } else {
-                    midato=new Covidesdata();
-                    midato.setDatos(cade);
-                    
-                    pw.println(midato.getDatos());
-                    i++;
-                }
-            }
-            lector.close();
-            pw.close();
-            fw.close();
-            System.out.println("Proceso Terminado "+i);
-        } catch (Exception e) {
-            System.out.println("Covides2: "+e.getLocalizedMessage());
         }
     }
     

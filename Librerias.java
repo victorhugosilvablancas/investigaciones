@@ -3,8 +3,9 @@ package com.hugosql.regresionlineal;
 import java.sql.Timestamp;
 
 /**
- *
- * @author victo
+ * Define las constantes globales y algunas funciones de formato.
+ * 
+ * @author Victor Hugo Silva Blancas
  */
 public class Librerias {
     public static final String INSERTA="Insert";

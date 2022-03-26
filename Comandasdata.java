@@ -5,8 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * @author victo
+ * Clase para la configuración de los datos 
+ * de las comandas del restaurante de comida rápida.
+ * 
+ * @author Victor Hugo Silva Blancas
  */
 public class Comandasdata {
     String cadena;

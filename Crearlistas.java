@@ -6,8 +6,10 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 /**
+ * Crea listas dinámicas para realizar tanto la normalización
+ * como el resto de las operaciones.
  *
- * @author victo
+ * @author Victor Hugo Silva Blancas
  */
 public class Crearlistas {
     public Crearlistas() {

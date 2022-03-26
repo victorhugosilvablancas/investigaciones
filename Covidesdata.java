@@ -5,11 +5,12 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 /**
+ * Clase para la configuración de los datos 
+ * de Covid y creación de los vectores.
  *
- * @author victo
+ * @author Victor Hugo Silva Blancas
  */
 public class Covidesdata {
     String cadena;

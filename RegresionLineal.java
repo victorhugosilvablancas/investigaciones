@@ -1,8 +1,9 @@
 package com.hugosql.regresionlineal;
 
 /**
- *
- * @author victo
+ * Cálculo de la Regresión Lineal en base a vectores x e y con tres variaciones.
+ * 
+ * @author Victor Hugo Silva Blancas
  */
 public class RegresionLineal {
 
